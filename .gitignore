@@ -1,0 +1,9 @@
+__pycache__/
+*.pyc
+test_*.js
+test_*.py
+verify_*.js
+debug_*.js
+run_verify.js
+.DS_Store
+user_keys.json

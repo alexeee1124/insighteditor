@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: insighteditor
+    runtime: python
+    buildCommand: echo "Zero dependencies required"
+    startCommand: python3 server.py
+    healthCheckPath: /ping
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.11.0
+      - key: RENDER_EXTERNAL_URL
+        fromService:
+          type: web
+          name: insighteditor
+          property: host

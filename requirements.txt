@@ -1,0 +1,2 @@
+# InstaStudio standalone server has zero external Python dependencies.
+# Runs on Python 3.9+ using standard library modules: http.server, socketserver, urllib, json, re.
